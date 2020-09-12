@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <style type="text/css">
+    h1 {color:red;}
+    p {color:blue;}
+    </style>
+    <base href="http://www.github.com" target="_blank">
 </head>
 <body>
-    <h1>This is a test</h1>
-    <h2>this is a test too</h2>
+    <div id="container" style="width:500px">
+    <div id="header" style="background-color: brown;">
+    <h1 style="margin-bottom:0;">This is a title</h1></div>
+    <p>this is a test too</p>
+    <a href="http://www.github.com">GitHub</a>
+    <br>
+    <a id='tips'>有用的提示部分</a>
+    <br>
+    <a href="#tips" style="background-color: aqua;">访问有用的提示部分</a>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ul>
+    <ol>
+        <li>Coffee</li>
+        <li>Milk</li>
+    </ol>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- White cold drink</dd>
+    </dl>
+    <form>
+        name:<input type="text" name="name"><br>
+        password:<input type="password" name="pwd"><br>
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female<br>
+        <input type="checkbox" name="vehicle" value="Bike">Bike<br>
+        <input type="checkbox" name="vehicle" value="Car">Car<br>
+    </form>
+    <div id="footer" style="background-color: bisque;clear:both;text-align:center;">版权@magic.com</div>
+    </div>
 </body>
 </html>
