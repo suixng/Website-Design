@@ -1,0 +1,13 @@
+h1,h2{ color:blue; 
+    font-size:14px;
+}
+#second{
+    color:red ;
+}
+#third{
+    color:blue;
+}
+.center{
+    text-align: center;
+    color: red;
+}
