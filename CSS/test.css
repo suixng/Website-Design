@@ -4,6 +4,9 @@ h1,h2{ color:blue;
 #second{
     color:red ;
 }
+li strong{
+    font-style: italic;
+}
 #third{
     color:blue;
 }
