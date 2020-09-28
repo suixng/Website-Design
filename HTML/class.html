@@ -6,12 +6,53 @@
     <title>Login</title>
 </head>
 <body>
-    <form name="user" method="get" action="">
-        用户名：<input type="text" name="username" value="请输入你的用户名">
+    <form>
+        姓名：<br/>
+        <input type="text" name="name">
         <br>
-        密码：<input type="password" name="userpassword" >
+        性别：<br>
+        <input type="radio" name="sex" value="male" checked>男
         <br>
-        <input type="submit" value="注册">
+        <input type="radio" name="sex" value="female">女 
+        <br>
+        爱好：<br>
+        <input type="checkbox" name="hobby" value="sports">运动
+        <br>
+        <input type="checkbox" name="hobby" value="chess">棋类
+        <br>
+        <input type="checkbox" name="hobby" value="programming">编程
+        <br>
+        文化程度：<br>
+        <select name="education">
+            <option value="none">未受教育</option>
+            <option value="primary">小学</option>
+            <option value="junior">中学</option>
+            <option value="senior">高中</option>
+            <option value="undergraduate">大学本科</option>
+            <option value="master">硕士</option>
+            <option value="doctor">博士</option>
+        </select>
+        <br>
+        专业：<br>
+        <input type="text" name="major" value="请输入你的专业名称">
+        <br>
+        政治面貌：<br>
+        <input type="checkbox" name="politics" value="masses">群众
+        <br>
+        <input type="checkbox" name="politics" value="member">团员
+        <br>
+        <input type="checkbox" name="politics" value="communist">党员
+        <br>
+        民族:<br>
+        <input type="text" name="nation" value="汉族">
+        <br>
+        出生年月：<br>
+        <input type="text" name="birthday" value="2000.01">
+        <br>
+        身份证号：<br>
+        <input type="number" name="ID" maxlength="18" size="25">
+        <br>
+
     </form>
     
 </body>
