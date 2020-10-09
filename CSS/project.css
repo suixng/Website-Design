@@ -1,0 +1,19 @@
+.header-content ul li{
+    float: left;
+    padding-left: 50px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+#headerPicture{
+    margin-left: 0px;
+    float: left;
+    
+}
+.headerStyle{
+    margin-left: 0px;
+    margin-top: 2px;
+}
+.headerRight{
+    float: right;
+    font-size: 20px;
+}
