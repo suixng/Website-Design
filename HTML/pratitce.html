@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../JAVASCRIPT/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../CSS/pratitce.css">
 </head>
 <body>
-    <h1 align="center">the test</h1>
-    <a href="http://www.github.com">This is a link</a>
-    <img src="../pictures/timg.jpg" width=100% height=800spx>
+    <p id="p1">test</p>
+    <p class="p2">if you click me ,will be </p>
+    <p class="p2">if you click me ,will be </p>
+    <p class="p2">if you click me ,will be </p>
+    username:<input type="text" id="txtUserName"><br>
+    <input type="button"  id="btnLogin" value="Login">
+    <input type="button" id="btnClear" value="Clear">
 </body>
+<script>
+    $(function(){
+        
+        $("#p1").click(function(){
+            $(".p2").hide();
+        });
+        // $("#p1").click(function(){
+        //     alert($(".p2").hide());
+        // });
+        $("#btnLogin").click(function(){
+            var userName =  $("txtUserName").val();
+            if(userName == "")
+                alert("userName can not be none");
+                else{
+                $(this).attr("disabled","disabled");
+                $(this).val("Is Login");
+                }
+        });
+        $("#btnClear").click(function(){
+            $("#btnLogin").removeAttr("disabled");
+            $("#btnLogin").val("Login");
+            $("#txtUserName").val("");
+            
+        });
+    });
+</script>
 </html>
