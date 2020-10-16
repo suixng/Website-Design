@@ -30,16 +30,23 @@
             if(userName == "")
                 alert("userName can not be none");
                 else{
-                $(this).attr("disabled","disabled");
-                $(this).val("Is Login");
+                    $.ajax({
+                        url:"js.php",
+                        type:"post",
+                        data:{userName:userName,"age":18},
+                        success:function(result){
+                            if(result == 1){
+                                Location.href = "index.html"
+                            }else{
+                                
+                            }
+                        }
+                    })
+                    $(this).attr("disabled","disabled");
+                    $(this).val("Is Login");
                 }
         });
-        $("#btnClear").click(function(){
-            $("#btnLogin").removeAttr("disabled");
-            $("#btnLogin").val("Login");
-            $("#txtUserName").val("");
-            
-        });
+        
     });
 </script>
 </html>
