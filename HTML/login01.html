@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+</head>
+<body>
+    <div class="layui-container">
+        <form class="layui-form" action="">
+            <div class="layui-row">
+                <div class="layui-col-md4 layui-col-md-offset4" style="margin-top: 40px;">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">输入框</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="userName" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="layui-col-md4 layui-col-md-offset4">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">密码框</label>
+                        <div class="layui-input-inline">
+                          <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">提示</div>
+                      </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="layui-col-md4 layui-col-md-offset4">
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                          <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                          <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../layui/layui.js"></script>
+<script>
+   layui.use(['layer','from'],function(){
+       var layer = layui.layer,from = layui.from;
+       layer.msg("hello world");
+   });
+</script>
+</html>
